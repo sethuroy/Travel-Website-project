@@ -1,0 +1,778 @@
+@import url('https://fonts.googlepis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    font-family: 'Nunito',sans-serif;
+
+}
+
+*::selection{
+    background: orangered;
+    color: white;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+    color: orangered;
+}
+
+.heading span{
+    font-size: 3rem;
+    border-radius: .5rem;
+}
+
+.heading span.space{
+    background: none;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    padding: .8rem 3rem;
+    border: 0.5rem solid ;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: rgba(255, 165, 0, .2);
+    color: orangered;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #1c1414;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: rgb(250, 246, 246);
+    text-transform: uppercase;
+}
+
+header .logo span{
+    color: orangered;
+}
+
+header .navbar a{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0.8rem;
+}
+
+header .navbar a:hover{
+    color: #ff0000cb;
+}
+
+header .icons i{
+    font-size: 2.5rem;
+    color: #f5f9ff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover{
+    color: orangered;
+}
+
+header .search-bar-container{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    padding: 1.5rem 2rem;
+    background: #e5aee72f;
+    border-top: .1rem solid rgba(11, 218, 152, 0.945);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+
+header .search-bar-container label{
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+/* header .search-bar-container label:hover{
+    color: orangered;
+} */
+
+.login-form-container{
+    position: fixed;
+    top: -120%; left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container.active{
+    top: 0;
+}
+
+.login-form-container form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: rgb(240, 237, 237);
+    width: 50rem;
+}
+
+.login-form-container form h3{
+    font-size: 3rem;
+    color: #0a0606;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #7af7d6;
+    margin: .6rem 0;
+    border: .1rem solid rgba(6, 6, 6, 0.3);
+    text-transform: none;
+}
+ 
+.login-form-container form .box:focus{
+    border-color: rgb(12, 17, 4);
+}
+
+.login-form-container form #remember{
+    margin: 2rem 0;
+}
+
+.login-form-container form label{
+    font-size: 1.5rem;
+}
+
+.login-form-container form .btn{
+    display: block;
+    width: 100%;
+    color: #11131e;
+    background-color: skyblue;
+}
+
+.login-form-container form p{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #121010;
+}
+
+.login-form-container form p a{
+    color: var(--orange);
+}
+
+.login-form-container form p a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+.login-form-container #form-close{
+    position: absolute;
+    top: 2rem; right: 3rem;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu-bar{
+    color: #fff;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content{
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+}
+
+.home .content p{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+.home .content .btn{
+    border-radius: 20px;
+    color: #333;
+    background-color: #adff2f;
+}
+.home .content .btn:hover{
+    border-radius: 20px;
+    color: #bedb19;
+    background-color: #0c0e0b;
+}
+.home .video-container video{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgba(0,0,0,.7);
+    position: relative;
+    top: 10rem;
+}
+
+.home .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+
+.home .controls .vid-btn.active{
+    background: #ffff00;
+}
+
+.book{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    color: #fd632b;
+    /* min-height: 100vh; */
+    background: #b1b0b0;
+    text-align: left;
+    /* padding: 6rem 0rem; */
+}
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.book .row .btn{ 
+    border-radius: 20px;
+    color: #333;
+    background-color: #adff2f;
+}
+.book .row .btn:hover{ 
+    border-radius: 20px;
+    color: #d0eb1d;
+    background-color: #131410;
+}
+.book .row .image{
+    flex: 1 1 40rem;
+}
+
+.book .row .image img{
+    width: 100%;
+    height: 60vh;
+}
+
+.book .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.book .row form .inputBox{
+    padding: .5rem 0;
+}
+
+.book .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+}
+
+.book .row form .inputBox h3{
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+    color: #131414;
+}
+
+.packages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fd632b;
+    /* min-height: 100vh; */
+    background: #a8a9ad;
+    text-align: center;
+    padding: 0rem 2.5rem;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+    height: 250px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+
+}
+
+.container .card:hover{
+    height: 300px;
+    cursor: pointer;
+}
+
+.container .card .imgBx{
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    top: 0px;
+    left: 10px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    /* left: 20px; */
+    /* z-index: 1; */
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx{
+    top: -100px;
+    scale: 0.75;
+    /* border-radius: 4px; */
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+
+}
+.container .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container .card .content{
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 20px;
+    margin-top: -1px;
+    padding: 0px 30px;
+    text-align: center;
+    color: #111;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+    height: 150px;
+}
+.container .card .content h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #11131e;
+}
+.container .card .content p{
+    font-size: rem;
+    font-weight: 300;
+    color: #333;
+}
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.services .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.services .box-container .box i{
+    padding: 1rem;
+    font-size: 5rem;
+    color: orangered;
+}
+.services .box-container .box h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: #636463;
+    padding: 1rem;
+}
+.services .box-container .box:hover{
+    box-shadow: 0 1rem 2rem hsla(133, 85%, 52%, 0.861);
+}
+
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fd632b;
+    /* min-height: 100vh; */
+    background: #a8a9ad;
+    text-align: center;
+    padding: 2rem;
+}
+.review .swiper-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+.review .swiper-container .slider{
+    display: block;
+    flex: 1 1 30rem;
+    flex-direction: column;
+    background: rgb(108, 104, 104);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    /* width: 30%; */
+    border: .2rem solid rgb(255, 145, 0);
+    transition: 0.3s;
+}
+.review .swiper-container .slider:hover{
+    transform: scale(1.1);
+}
+.review .box img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.review .box h3{
+    color: white;
+    font-size: 2.5rem;
+}
+.review .box p{
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.review .box .stars i{
+    color: rgb(255, 247, 0);
+    font-size: 1.7rem;
+}
+
+@media (max-width: 480px) {
+    .container .card{
+        width: 230px;
+        border-radius: 15px;
+    }
+    .container .card .imgBx{
+        width: 185px;
+        border-radius: 10px;
+    }
+    .container .card .content p{
+        font-size: 0.8rem;
+
+    }
+
+}
+
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact .row .image{
+    flex: 1 1 35rem;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row form{
+    flex: 1 1 50rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.contact .row form .inputBox{
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #1ae61d;
+}
+
+.contact .row form .inputBox input, .contact .row form textarea{
+    width: 49%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #79e651;
+    background: #e0c476;
+    text-transform: none;
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+    width: 100%;
+    color: #131410;
+}
+
+.contact .row .btn{
+    color: #879e41;
+}
+.contact .row .btn:hover{
+    color: #ff0000;
+}
+
+
+
+
+.footer{
+    background: #333;
+    padding: 1rem 6%;
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.footer .box-container .box{
+    width: 10%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer .box-container .box:nth-child(1){
+    width: 10%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer .box-container .box:nth-child(2){
+    width: 10%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer .box-container .box:nth-child(3){
+    width: 10%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer .box-container .box:nth-child(4){
+    width: 10%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    color: #eee;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    color: #fff;
+}
+
+.footer .box-container .box a:hover{
+    color: orangered ;
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    border-top: .1rem solid rgba(255,255,255,.2);
+}
+
+.footer .credit span {
+    color: orange;
+}
+
+
+/* media quires */
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:991px){
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-bar{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; right: 0; left: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255,255,255,.2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading span{
+        font-size: 2.5rem;
+    }
+
+    .contact .row form .inputBox input{
+        width: 100%;
+    }
+}
+

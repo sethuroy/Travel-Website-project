@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traveller website</title>
+
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="login web home.css">
+
+</head>
+<body>
+    
+<!-- header section starts -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>TR</span>avel</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#prepackages">Pre-Packages</a>
+        <a href="#services">Services</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-time" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+        <p>Forget password? <a href="#">click here</a></p>
+        <p>Don't have an account? <a href="#">Register me</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>dicover new places with us, adventure awaits</p>
+        <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="v5.mp4"></span>
+        <span class="vid-btn" data-src="v2.mp4"></span>
+        <span class="vid-btn" data-src="v6.mp4"></span>
+        <span class="vid-btn" data-src="v7.mp4"></span>
+        <span class="vid-btn" data-src="v8.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="v5.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts -->
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        <span class="space"></span>
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="book now.jpg" alt="">
+        </div>   
+    
+
+        <form action="">
+            <div class="inputBox">
+                <h3>From</h3>
+                <input type="text" placeholder="place name">
+            </div>
+            <div class="inputBox">
+                <h3>People</h3>
+                <input type="number" placeholder="numbers of guests">
+            </div>
+            <div class="inputBox">
+                <h3>Arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="Book now">
+        </form>
+
+    </div>    
+
+</section>
+
+<!-- book section ends -->
+
+<!-- Packages section starts -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>P</span>
+        <span>R</span>
+        <span>E</span>
+        <span>P</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="t1.jpg">
+            </div>
+            <div class="content">
+                <h2>CHICAGO</h2>
+                <p>To begin, after spending a summer in Chicago I have found ways to enjoy the city with spending little to no money. Chicago is notorious for its tourist attractions, particularly for families and friends.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="t2.jpg">
+            </div>
+            <div class="content">
+                <h2>SANTORINI-ISLAND</h2>
+                <p>Santorini is a Greek island that belongs to the Cyclades complex. Strategically located in the Aegean Sea, it is a very popular holiday destination among both natives and foreigners. Also referred to as Thira, this is the place where one of the biggest volcanic eruptions in history occurred.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="t3.jpg">
+            </div>
+            <div class="content">
+                <h2>SINGAPORE</h2>
+                <p>This fantastic destination is one of the most beautiful man-made wonders that you cannot give a miss. The exquisitely beautiful attractions like Sentosa Island, Gardens by the Bay, Universal Studios and Night Safari are the pride of Singapore tourism.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="t4.jpg">
+            </div>
+            <div class="content">
+                <h2>BANGKOK</h2>
+                <p>Bangkok is a popular destination amongst tourists, especially from India. Tourism in Bangkok offers variety of sightseeing and entertainment options. The wide range of Bangkok tourism packages provided by MakeMyTrip allows the traveller to explore various Bangkok tourist places in comfort.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="t5.jpg">
+            </div>
+            <div class="content">
+                <h2>CANADA-NIAGARA FALLS</h2>
+                <p>The city seen from the Queensboro Bridge is always the city seen for the first time, in its first wild promise of all the mystery and the beauty in the world. I would give the greatest sunset in the world for one sight of New York's skyline.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="t6.jpg">
+            </div>
+            <div class="content">
+                <h2>KERALA</h2>
+                <p>Palm-lined beaches, thrilling wildlife tours, breathtaking backwaters, resplendent hills adorned with tea, coffee, and spice plantations and spicy cuisine are just some of the many things you experience while traveling through this diverse state</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Packages section starts -->
+
+<!-- service section starts -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>HOTEL</h3>
+            <p>The hotel did not normally provide room service. Let's call room service, I need some breakfast. Guests can place an order for room service on the phone by dialing 118. Dine in the hotel restaurant or order food from room service.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>FOOD and COOL DRINKS</h3>
+            <p>the preparation, delivery, serving, etc., of ready-to-eat foods: The cafeteria employs over 20 people in food service.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>SAFETY GUIDE</h3>
+            <p>Safety Guidelines are an aid to understand and implement Safety rules.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>AROUND THE WORLD</h3>
+            <p>Safety Guidelines are an aid to understand and implement Safety rules.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>FASTEST TRAVEL</h3>
+            <p>Safety Guidelines are an aid to understand and implement Safety rules.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>ADVENTURES</h3>
+            <p>The island attracts adventurous travelers. He is an adventurous cook who is always trying new recipes. Her design is an adventurous departure from what we usually see. They have an adventurous lifestyle.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- service section endss -->
+
+<!-- Review section starts -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>R</span>
+        <span>E</span>
+        <span>V</span>
+        <span>I</span>
+        <span>E</span>
+        <span>W</span>
+    </h1>
+
+    <div class="swiper-container">
+
+        <div class="slider">
+            <div class="box">
+                <img src="s1.jpg" alt="">
+                <h3>JERRY @ TOM...</h3>
+                <p>Our trip to Dubai has been amazing. A big Thanks to sethu and jerry from Discover DDays for making it smooth, hassle free and flexible one. sethu managed it very well. The team in Dubai was also very well managed and supportive. Thanks again to seshu and jay from Discover DDays and Travel Triangle. All my trip members enjoyed a lot</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="box">
+                <img src="s2.jpg" alt="">
+                <h3>AAVIN...</h3>
+                <p>Our trip to Dubai has been amazing. A big Thanks to seshu and deepu from Discover DDays for making it smooth, hassle free and flexible one. sethu managed it very well. The team in Dubai was also very well managed and supportive. Thanks again to seshu and deepu from Discover DDays and Travel Triangle. All my trip members enjoyed a lot</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="box">
+                <img src="s3.jpg" alt="">
+                <h3>VELU  VENKAT...</h3>
+                <p>Our trip to Dubai has been amazing. A big Thanks to seshu and harish from Discover DDays for making it smooth, hassle free and flexible one. sethu managed it very well. The team in Dubai was also very well managed and supportive. Thanks again to seshu and harish from Discover DDays and Travel Triangle. All my trip members enjoyed a lot</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="box">
+                <img src="s4.jpg" alt="">
+                <h3>RAJ...</h3>
+                <p>Our trip to Dubai has been amazing. A big Thanks to seshu and silambu from Discover DDays for making it smooth, hassle free and flexible one. sethu managed it very well. The team in Dubai was also very well managed and supportive. Thanks again to seshu and silambu from Discover DDays and Travel Triangle. All my trip members enjoyed a lot</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="box">
+                <img src="s7.jpg" alt="">
+                <h3>GOKUL...</h3>
+                <p>Our trip to Dubai has been amazing. A big Thanks to seshu and Pranav from Discover DDays for making it smooth, hassle free and flexible one. sethu managed it very well. The team in Dubai was also very well managed and supportive. Thanks again to seshu and silambu from Discover DDays and Travel Triangle. All my trip members enjoyed a lot</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="box">
+                <img src="s5.jpg" alt="">
+                <h3>JACK APPU...</h3>
+                <p>Our trip to Dubai has been amazing. A big Thanks to seshu and hithesh from Discover DDays for making it smooth, hassle free and flexible one. sethu managed it very well. The team in Dubai was also very well managed and supportive. Thanks again to seshu and aavin from Discover DDays and Travel Triangle. All my trip members enjoyed a lot</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</section>
+
+<!-- Review section ends -->
+
+<!-- contact section starts -->
+
+<section class="contact">
+
+    <h1 class="heading"> 
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="contact1.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message"  name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+</section>
+
+<!-- contact section ends -->
+
+
+
+<!-- footer section -->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perferendis asperiores explicabo ipsa quo quod temporibus exercitationem hic aperiam quasi ipsum,
+                earum officiis labore, recusandae molestiae sequi neque obcaecati in!</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">Maldives</a>
+            <a href="#">Thailand</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">book</a>
+            <a href="#">Pre-packages</a>
+            <a href="#">services</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instargam</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+    </div>
+    <h1 class="credit"><marquee>created by <span>mr.sethu</span> | all rights reserved!</marquee> </h1>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+<script src="login web home.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {});
+</script>
+
+</body>
+</html>
